@@ -1,68 +1,47 @@
-# Template DataForGood
+## Présentation
 
-This file will become your README and also the index of your
-documentation.
+Ce projet a pour objectif de consolider, analyser et créer une cartographie sur la qualité de l'eau potable en France à partir de données ouvertes.
+Il est porté par des bénévoles de l'association [Data For Good](https://www.dataforgood.fr/) dans le cadre de la saison 13, pour le compte de l'association [Générations Futures](https://www.generations-futures.fr/).
 
-# Contributing
+Le projet est divisé en 3 parties :
 
-## Installer Poetry
+- Consolidation des données, dans le dossier `pipelines`
+- Analyse des données, dans le dossier `analytics`
+- Création de la cartographie, dans le dossier `webapp`
 
-Plusieurs [méthodes d'installation](https://python-poetry.org/docs/#installation) sont décrites dans la documentation de poetry dont:
+Pour la gestion de projet, nous utilisons les outils de l'association, à savoir Slack, Outline et NocoDB.
 
-- avec pipx
-- avec l'installateur officiel
+## Installation
 
-Chaque méthode a ses avantages et inconvénients. Par exemple, la méthode pipx nécessite d'installer pipx au préable, l'installateur officiel utilise curl pour télécharger un script qui doit ensuite être exécuté et comporte des instructions spécifiques pour la completion des commandes poetry selon le shell utilisé (bash, zsh, etc...).
+- [Installation de Python](#installation-de-python)
 
-L'avantage de pipx est que l'installation de pipx est documentée pour linux, windows et macos. D'autre part, les outils installées avec pipx bénéficient d'un environment d'exécution isolé, ce qui est permet de fiabiliser leur fonctionnement. Finalement, l'installation de poetry, voire d'autres outils est relativement simple avec pipx.
+Ce projet utilise [uv](https://docs.astral.sh/uv/) pour la gestion des dépendances Python. Il est préréquis pour l'installation de ce projet.
 
-Cependant, libre à toi d'utiliser la méthode qui te convient le mieux ! Quelque soit la méthode choisie, il est important de ne pas installer poetry dans l'environnement virtuel qui sera créé un peu plus tard dans ce README pour les dépendances de la base de code de ce repo git.
+Une fois installé, il suffit de lancer la commande suivante pour installer la version de Python adéquate, créer un environnement virtuel et installer les dépendances du projet.
 
-### Installation de Poetry avec pipx
+```bash
+uv sync
+```
 
-Suivre les instructions pour [installer pipx](https://pipx.pypa.io/stable/#install-pipx) selon ta plateforme (linux, windows, etc...)
+A l'usage, si vous utilisez VSCode, l'environnement virtuel sera automatiquement activé lorsque vous ouvrirez le projet. Sinon, il suffit de l'activer manuellement avec la commande suivante :
 
-Par exemple pour Ubuntu 23.04+:
+```bash
+source .venv/bin/activate
+```
 
-    sudo apt update
-    sudo apt install pipx
-    pipx ensurepath
+Ou alors, utilisez la commande `uv run ...` (au lieu de `python ...`) pour lancer un script Python. Par exemple:
 
-[Installer Poetry avec pipx](https://python-poetry.org/docs/#installing-with-pipx):
+```bash
+uv run pipelines/run.py run build_database
+```
 
-    pipx install poetry
+- [Installation de Node.js](#installation-de-nodejs) (pour le développement du site web et pour l'usage de Evidence)
 
-### Installation de Poetry avec l'installateur officiel
+Pour le développement du site web et pour l'usage de [Evidence](https://evidence.dev/), il est nécessaire d'installer Node.js. Pour cela, il suffit de suivre les instructions sur le [site officiel](https://nodejs.org/).
 
-L'installation avec l'installateur officiel nécessitant quelques étapes supplémentaires,
-se référer à la [documentation officielle](https://python-poetry.org/docs/#installing-with-the-official-installer).
+Pour installer les dépendances du site web, il suffit de lancer les commandes suivantes :
 
-## Utiliser un venv python
-
-    python3 -m venv .venv
-
-    source .venv/bin/activate
-
-## Utiliser Poetry
-
-Installer les dépendances:
-
-    poetry install
-
-Ajouter une dépendance:
-
-    poetry add pandas
-
-Mettre à jour les dépendances:
-
-    poetry update
-
-## Lancer les precommit-hook localement
-
-[Installer les precommit](https://pre-commit.com/)
-
-    pre-commit run --all-files
-
-## Utiliser Tox pour tester votre code
-
-    tox -vv
+```bash
+cd webapp
+npm install
+```
