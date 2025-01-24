@@ -1,15 +1,16 @@
-## Présentation
+# Rendre Visible la Pollution de l'Eau Potable 💧
 
-Ce projet a pour objectif de consolider, analyser et créer une cartographie sur la qualité de l'eau potable en France à partir de données ouvertes.
-Il est porté par des bénévoles de l'association [Data For Good](https://www.dataforgood.fr/) dans le cadre de la saison 13, pour le compte de l'association [Générations Futures](https://www.generations-futures.fr/).
+## Contexte du Projet
 
-Le projet est divisé en 3 parties :
+Ce projet, développé par des bénévoles de [Data For Good](https://www.dataforgood.fr/) lors de la saison 13, vise à créer une carte interactive pour [Générations Futures](https://www.generations-futures.fr/).
 
-- Consolidation des données, dans le dossier `pipelines`
-- Analyse des données, dans le dossier `analytics`
-- Création de la cartographie, dans le dossier `webapp`
+L'objectif est de consolider, analyser et cartographier les données sur la qualité de l'eau potable en France à partir de sources de données ouvertes.
 
-Pour la gestion de projet, nous utilisons les outils de l'association, à savoir Slack, Outline et NocoDB.
+## Structure du Projet
+
+- `pipelines/` : Consolidation et préparation des données
+- `analytics/` : Analyse des données
+- `webapp/` : Développement du site web interactif
 
 ## Installation
 
