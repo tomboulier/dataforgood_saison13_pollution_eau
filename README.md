@@ -45,7 +45,7 @@ source .venv/bin/activate
 Ou alors, utilisez la commande `uv run ...` (au lieu de `python ...`) pour lancer un script Python. Par exemple:
 
 ```bash
-uv run pipelines/run.py run build_database
+uv run eau_pipelines/run.py run build_database
 ```
 
 #### Pycharm
@@ -66,11 +66,15 @@ npm install
 ```
 
 ## Data Processing
+
+### Package installation
+Tout le code dans eau_pipelines sera installé en tant que package python automatiquement à chaque uv_sync
+
 ### Comment construire la database
 Une fois l'environnement python setup avec uv, vous pouvez lancer data_pipeline/run.py pour remplir la database
 Il suffit de lancer
 ```bash
-uv run pipelines/run.py run build_database
+uv run eau_pipelines/run.py run build_database
 ```
 
 ### Connection a Scaleway via boto3 pour stockage cloud
