@@ -15,7 +15,9 @@ repos:
   #  hooks:
   #  - id: bandit
   #    exclude: tests/
-  - repo: https://github.com/Lucas-C/pre-commit-hooks-safety
-    rev: v1.3.1
-    hooks:
-      - id: python-safety-dependencies-check
+
+  # This pre commit only work with poetry so we commented it as we work with uv
+  # - repo: https://github.com/Lucas-C/pre-commit-hooks-safety
+  #  rev: v1.3.1
+  #  hooks:
+  #    - id: python-safety-dependencies-check
