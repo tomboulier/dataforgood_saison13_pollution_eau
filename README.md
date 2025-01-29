@@ -80,11 +80,13 @@ uv run eau_pipelines/run.py run build_database
 ### Connection a Scaleway via boto3 pour stockage cloud
 Un utils a été créé dans [storage_client.py](pipelines%2Futils%2Fstorage_client.py) pour faciliter la connection au S3 hébergé sur Scaleway.
 
-Il faut créer un fichier .env avec les secrets ci dessous dedans pour que la connection fonctionne.
+Il faut créer un fichier .env dans le dossier eau_pipelines/config avec les secrets ci dessous dedans pour que la connection fonctionne.
 ```text
 SCW_ACCESS_KEY={ACCESS_KEY}
 SCW_SECRET_KEY={SECRET_KEY}
 ```
+> ⚠ **Attention:** Ne jamais commir les access key et secret key.
+
 Un vaultwarden va être setup pour récupérer les secrets pour les personnes qui en ont besoin
 
 Le notebook [test_storage_utils.ipynb](pipelines%2Fnotebooks%2Ftest_storage_utils.ipynb) montre un example d'utilisation de l'utils pour charger et lire des csv sur le bucket S3 du projet
