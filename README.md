@@ -127,4 +127,4 @@ Pour contribuer on priviliégie l'utilisation de fork du projet. Cela permettra 
 * Dans un premier temps, cliquer sur fork pour récupérer le projet sur votre espace.
 * Créez votre branche de travail en partant de la branche main, et en suivant la nomenclature feature/nom_de_la_feature ou hotfix/nom_du_hotfix en fonction du besoin
 * Pushez votre code sur votre remote
-* 
+* Créez une pull request entre base repository: dataforgood/13_pollution_eau/main et head repository YourGithubAccount/13_pollution_eau/your_branch
