@@ -120,3 +120,11 @@ Lancer la commande suivante pour s'assurer que le code satisfait bien tous les p
 ```ba*sh
 pre-commit run --all-files
 ```
+
+## How to contribute
+Pour contribuer on priviliégie l'utilisation de fork du projet. Cela permettra de ne pas avoir a gérer les demandes d'accès au repository principal.
+
+* Dans un premier temps, cliquer sur fork pour récupérer le projet sur votre espace.
+* Créez votre branche de travail en partant de la branche main, et en suivant la nomenclature feature/nom_de_la_feature ou hotfix/nom_du_hotfix en fonction du besoin
+* Pushez votre code sur votre remote
+* 
