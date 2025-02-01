@@ -132,3 +132,6 @@ Pour contribuer, il est recommandé d'utiliser un fork du projet. Cela permet d'
 * Créez une pull request en spécifiant :
   * Base repository : dataforgood/13_pollution_eau/main
   * Head repository : YourGithubAccount/13_pollution_eau/your_branch
+* Pour faciliter la revue de la pull request :
+  * Liez la pull request à un ticket NocoDB en ajoutant le lien du ticket dans la description.
+  * Rédigez une description détaillée de la pull request afin de fournir un maximum d’informations sur les modifications apportées.
