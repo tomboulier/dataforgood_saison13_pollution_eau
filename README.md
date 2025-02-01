@@ -122,9 +122,13 @@ pre-commit run --all-files
 ```
 
 ## How to contribute
-Pour contribuer on priviliégie l'utilisation de fork du projet. Cela permettra de ne pas avoir a gérer les demandes d'accès au repository principal.
+Pour contribuer, il est recommandé d'utiliser un fork du projet. Cela permet d'éviter la gestion des demandes d'accès au dépôt principal.
 
-* Dans un premier temps, cliquer sur fork pour récupérer le projet sur votre espace.
-* Créez votre branche de travail en partant de la branche main, et en suivant la nomenclature feature/nom_de_la_feature ou hotfix/nom_du_hotfix en fonction du besoin
-* Pushez votre code sur votre remote
-* Créez une pull request entre base repository: dataforgood/13_pollution_eau/main et head repository YourGithubAccount/13_pollution_eau/your_branch
+* Dans un premier temps, cliquez sur Fork pour récupérer le projet dans votre espace GitHub.
+* Créez votre branche de travail à partir de la branche main, en respectant la nomenclature suivante :
+  * feature/nom_de_la_feature pour une nouvelle fonctionnalité
+  * hotfix/nom_du_hotfix pour une correction rapide
+* Poussez votre code vers votre dépôt distant.
+* Créez une pull request en spécifiant :
+  * Base repository : dataforgood/13_pollution_eau/main
+  * Head repository : YourGithubAccount/13_pollution_eau/your_branch
