@@ -14,4 +14,3 @@ os.makedirs(DATABASE_FOLDER, exist_ok=True)
 def clear_cache():
     """Clear the cache folder."""
     shutil.rmtree(CACHE_FOLDER)
-
